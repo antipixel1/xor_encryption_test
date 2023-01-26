@@ -66,7 +66,8 @@ def encrypt_parts(data, number_parts):
     else:
         print("Can't create the number of parts selected")
     return encrypted_parts
-
+#Function to XOR encrypt a specific file.
+#It generates the encrypted content, and the corresponding keys, in two separate files.
 def encrypt_file(filename):
     original_file = open(filename)
     file_encrypted = open(filename+"_encrypted.txt", "x", encoding='utf-8')
